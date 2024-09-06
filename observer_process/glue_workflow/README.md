@@ -28,7 +28,7 @@ glue_workflow/
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/glue_workflow.git
+    git clone https://github.com/shaik-abdulhaffeez/glue-workflows.git
     cd glue_workflow
 
 ## Run the main script:

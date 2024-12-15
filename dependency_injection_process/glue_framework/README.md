@@ -39,6 +39,12 @@ glue_framework/
 │   ├── __init__.py
 │   └── metadata_system.py
 │
+├── models/
+│   ├── __init__.py
+│   └── db/
+│       ├── metadata_erd.png
+│       └── schema.sql
+│
 ├── main.py
 └── README.md
 ```

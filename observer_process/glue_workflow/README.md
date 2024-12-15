@@ -6,14 +6,20 @@ This project demonstrates the implementation of an AWS Glue workflow using multi
 glue_workflow/
 │
 ├── etl_jobs/
-│   ├── init.py
+│   ├── __init__.py
 │   ├── base.py
 │   ├── data_etl_job.py
 │   ├── log_etl_job.py
 │   ├── email_etl_job.py
 │
+├── models/
+│   ├── __init__.py
+│   └── db/
+│       ├── metadata_erd.png
+│       └── schema.sql
+│
 ├── observers/
-│   ├── init.py
+│   ├── __init__.py
 │   ├── base.py
 │   ├── job_observer.py
 │
@@ -37,21 +43,31 @@ python main.py
 
 ## Components
 
-     etl_jobs: Contains the base class and specific implementations for different types of ETL jobs.
+     etl_jobs: 
+          Contains the base class and specific implementations for different types of ETL jobs.
 
-     observers: Contains the base class and specific implementations for observers.
+     models: 
+          Conatins example audit system audit ERD diagram, meaning of each colum and its DDL defination.
 
-     glue_job.py: The main Glue job class that acts as the subject in the Observer pattern.
+     observers: 
+          Contains the base class and specific implementations for observers.
 
-     main.py: The entry point for running the Glue job.
+     glue_job.py: 
+          The main Glue job class that acts as the subject in the Observer pattern.
+
+     main.py: 
+          The entry point for running the Glue job.
 
 ## Benefits
 
-     Improved Performance: By executing multiple ETL jobs concurrently, the workflow improves overall performance.
+     Improved Performance: 
+          By executing multiple ETL jobs concurrently, the workflow improves overall performance.
 
-     Scalability: The Observer pattern allows easy addition or removal of observers, making the workflow scalable and adaptable.
+     Scalability: 
+          The Observer pattern allows easy addition or removal of observers, making the workflow scalable and adaptable.
 
-     Maintainability: The Observer pattern decouples the components of the ETL process, making the workflow more maintainable.
+     Maintainability: 
+          The Observer pattern decouples the components of the ETL process, making the workflow more maintainable.
      
 ## Contributing
 
